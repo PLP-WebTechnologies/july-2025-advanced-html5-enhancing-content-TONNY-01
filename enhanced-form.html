@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enhanced HTML5 Content &amp; Week 2 Mastering Forms, Tables and Lists</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 10px;
+    }
+
+    header, main, footer {
+      margin-bottom: 2em;
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    ul, ol {
+      margin-left: 1.5em;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.5em;
+      text-align: left;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 1em 0;
+    }
+
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 1em;
+      margin-bottom: 1.5em;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    label {
+      display: block;
+      margin-top: 1em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="color"],
+    input[type="range"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.3em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      width: auto;
+      margin-right: 0.5em;
+    }
+
+    button {
+      background: #0066cc;
+      color: #fff;
+      padding: 0.7em 1.2em;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    button:hover {
+      background: #004999;
+    }
+
+    figure figcaption {
+      text-align: center;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Enhanced HTML5 Content &amp; Mastering Forms, Lists and Tables</h1>
+    <p>
+      This is Tonny's page showcasing lists, tables, semantic media, and a fully validated
+      HTML5 form.
+    </p>
+  </header>
+
+  <main>
+
+    <!-- Section 1: Lists -->
+    <section id="lists">
+      <h2>1. Lists </h2>
+      <p>Top Programming Languages :</p>
+      <ul>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>C#</li>
+        <li>Ruby</li>
+        <li>PHP</li>
+        <li>Swift</li>
+      </ul>
+
+      <p>Steps to Build a Portfolio :</p>
+      <ol>
+        <li>Plan your layout</li>
+        <li>Design the UI</li>
+        <li>Develop with HTML, CSS &amp; JavaScript</li>
+        <li>Deploy online</li>
+        <li>Promote on social media</li>
+        <li>Update regularly</li>
+        <li>Gather feedback</li>
+      </ol>
+    </section>
+
+    <hr>
+
+    <!-- Section 2: Tables -->
+    <section id="tables">
+      <h2>2. Tables </h2>
+      <table>
+        <caption> User Data</caption>
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Role</th>
+            <th>Registered</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tonny Kiplagat</td>
+            <td>Student</td>
+            <td>2024-06-15</td>
+          </tr>
+          <tr>
+            <td>James Kamau</td>
+            <td>Instructor</td>
+            <td>2023-09-01</td>
+          </tr>
+          <tr>
+            <td>Chakin Kim</td>
+            <td>Alumni</td>
+            <td>2022-12-20</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr>
+
+    <!-- Section 3: Media -->
+    <section id="media">
+      <h2>3. Media </h2>
+      <figure>
+        <img src="https://images.pexels.com/photos/29529439/pexels-photo-29529439.jpeg" width="400" height="200" alt="Placeholder image">
+        <figcaption>Example Placeholder Image</figcaption>
+      </figure>
+
+      <audio controls>
+        <source src="audio-sample.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <video controls width="400">
+        <source src="https://videos.pexels.com/video-files/6873503/6873503-uhd_1440_2560_25fps.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </section>
+
+    <hr>
+
+    <!-- Section 4: Form -->
+    <section id="form">
+      <h2>4. Registration Form</h2>
+      <form action="#" method="post">
+
+        <!-- Personal Information -->
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="e.g., Tonny Kiplagat"
+            required
+            minlength="3"
+            autocomplete="name"
+          >
+
+          <label for="dob">Date of Birth</label>
+          <input
+            type="date"
+            id="dob"
+            name="dob"
+            required
+          >
+
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender" required>
+            <option value="">Select…</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="nonbinary">Non-binary</option>
+            <option value="other">Other</option>
+          </select>
+        </fieldset>
+
+        <!-- Account Details -->
+        <fieldset>
+          <legend>Account Details</legend>
+
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="e.g., user@example.com"
+            required
+            autocomplete="email"
+          >
+
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="5–15 letters, numbers or underscores"
+            required
+            pattern="^[a-zA-Z0-9_]{5,15}$"
+            title="5–15 characters: letters, numbers, underscores"
+            autocomplete="username"
+          >
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Minimum 8 characters"
+            required
+            minlength="8"
+            autocomplete="new-password"
+          >
+
+          <label for="memberid">Member ID (read-only)</label>
+          <input
+            type="text"
+            id="memberid"
+            name="memberid"
+            value="USER123456"
+            readonly
+          >
+        </fieldset>
+
+        <!-- Contact & Preferences -->
+        <fieldset>
+          <legend>Contact &amp; Preferences</legend>
+
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+254712345678"
+            required
+            pattern="^\+?[0-9]{10,15}$"
+            title="Enter a valid phone number"
+          >
+
+          <label for="website">Portfolio URL</label>
+          <input
+            type="url"
+            id="website"
+            name="website"
+            placeholder="https://yourdomain.com"
+            autocomplete="url"
+          >
+
+          <label for="color">Favorite Color</label>
+          <input
+            type="color"
+            id="color"
+            name="color"
+            value="#0066cc"
+          >
+
+          <label for="experience">Experience Level</label>
+          <input
+            type="range"
+            id="experience"
+            name="experience"
+            min="0"
+            max="10"
+            value="5"
+          >
+
+          <label for="bio">Short Bio</label>
+          <textarea
+            id="bio"
+            name="bio"
+            rows="4"
+            maxlength="200"
+            placeholder="Tell us a bit about yourself"
+          ></textarea>
+        </fieldset>
+
+        <!-- Subscription -->
+        <fieldset>
+          <legend>Subscription</legend>
+
+          <label>
+            <input
+              type="radio"
+              name="subscription"
+              value="free"
+              checked
+            >
+            Free Plan
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="subscription"
+              value="pro"
+            >
+            Pro Plan
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="subscription"
+              value="enterprise"
+            >
+            Enterprise Plan
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="terms"
+              required
+            >
+            I agree to the <a href="#">Terms &amp; Conditions</a>
+          </label>
+        </fieldset>
+
+        <button type="submit">Register</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tonny Kiplagat. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
